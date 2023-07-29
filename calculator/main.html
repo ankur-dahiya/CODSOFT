@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codsoft submission</title>
+    <link rel="stylesheet" href="main.css">
+    
+  </head>
+  <body>
+    <h1 style="text-align: center;width: 100%;"><span style="color: #3079ED;">Ankur's</span><br>Codsoft Project</h1>
+    <div class="calculator">
+      <input type="text" id="result" class="input" name="display">
+      <div class="buttons">
+        <div class="operators">
+          <input type="button" class="bg" value="+" onclick="display(this)" onkeyup="myFunction(event)">
+          <input type="button" class="bg" value="-" onclick="display(this)" onkeyup="myFunction(event)">
+          <input type="button" class="bg" value="*" onclick="display(this)" onkeyup="myFunction(event)">
+          <input type="button" class="bg" value="/" onclick="display(this)" onkeyup="myFunction(event)">
+        </div>
+        <div class="grid">
+          <div class="numbers">
+            <input type="button" value="7" onclick="display(this)" onkeyup="myFunction(event)">
+            <input type="button" value="8" onclick="display(this)" onkeyup="myFunction(event)">
+            <input type="button" value="9" onclick="display(this)" onkeyup="myFunction(event)">
+          </div>
+          <div class="numbers">
+            <input type="button" value="5" onclick="display(this)" onkeyup="myFunction(event)">
+            <input type="button" value="6" onclick="display(this)" onkeyup="myFunction(event)">
+            <input type="button" value="7" onclick="display(this)" onkeyup="myFunction(event)">
+            </div>
+            <div class="numbers">
+              <input type="button" value="2" onclick="display(this)" onkeyup="myFunction(event)">
+              <input type="button" value="3" onclick="display(this)" onkeyup="myFunction(event)">
+              <input type="button" value="4" onclick="display(this)" onkeyup="myFunction(event)">
+            </div>
+            <div class="numbers">
+              <input type="button" value="0" onclick="display(this)" onkeyup="myFunction(event)">
+              <input type="button" value="1" onclick="display(this)" onkeyup="myFunction(event)">
+              <input type="button" value="c" onclick="clr();colorChange(this)" onkeyup="myFunction(event)"/>
+            </div>
+          </div>
+          <input class="equal" type="button" value="=" onclick="calculate();colorChange(this)" onkeyup="myFunction(event)">
+        </div>
+      </div>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+  </html>
